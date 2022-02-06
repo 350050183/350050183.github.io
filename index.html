@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+            /*height: 100%;*/
+        }
+
+        .container {
+            background-color: antiquewhite;
+            /*height: 100%;*/
+            width:200px;
+            height:200px;
+            /*position: relative;*/
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            align-content: center;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            position: relative;
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*transform: translate(-50%, -50%);*/
+        }
+    </style>
 </head>
 <body>
-<div style="align-content: center;text-align: center;margin-top:25%">center</div>
+<div class="container">
+    <div class="inner">center</div>
+</div>
 </body>
 </html>
